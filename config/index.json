@@ -1,0 +1,29 @@
+{
+  "data": "./data",
+  "xml_filename":"./data.xml",
+  "json_filename":"data.json",
+  "entryfolder":"entries",
+  "modules": {
+    "authors": {
+      "dirName": "authors",
+      "fileName": "en-us.json",
+      "masterfile":"authors.json"
+    },
+    "categories": {
+      "dirName": "categories",
+      "fileName": "en-us.json",
+      "masterfile":"categories.json"
+    },
+    "asset": {
+      "dirName": "assets",
+      "fileName": "assets.json",
+      "featuredfileName":"_featured.json",
+      "masterfile": "url_master.json"
+    },
+    "posts": {
+      "dirName": "posts",
+      "fileName": "en-us.json",
+      "masterfile":"posts.json"
+    }
+  }
+}

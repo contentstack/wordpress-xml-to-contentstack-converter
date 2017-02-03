@@ -1,0 +1,49 @@
+{
+  "authors": {
+    "uid": "authors",
+    "references": [],
+    "fields": {
+      "file": [],
+      "reference": []
+    }
+  },
+  "categories": {
+    "uid": "categories",
+    "references": [
+      {
+        "uid": "parent",
+        "path": "schema[3]",
+        "entryPath": "parent",
+        "content_type_uid": "categories",
+        "isCycle": true
+      }
+    ],
+    "fields": {
+      "file": [],
+      "reference": []
+    }
+  },
+  "posts": {
+    "uid": "posts",
+    "references": [
+      {
+        "uid": "author",
+        "path": "schema[2]",
+        "entryPath": "author",
+        "content_type_uid": "authors"
+      },
+      {
+        "uid": "category",
+        "path": "schema[3]",
+        "entryPath": "category",
+        "content_type_uid": "categories"
+      }
+    ],
+    "fields": {
+      "file": [
+        "featured_image"
+      ],
+      "reference": []
+    }
+  }
+}

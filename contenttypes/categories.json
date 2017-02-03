@@ -1,0 +1,65 @@
+{
+  "title": "Categories",
+  "uid": "categories",
+  "schema": [
+    {
+      "display_name": "Title",
+      "uid": "title",
+      "data_type": "text",
+      "field_metadata": {
+        "_default": true
+      },
+      "unique": false,
+      "mandatory": false,
+      "multiple": false
+    },
+    {
+      "display_name": "URL",
+      "uid": "url",
+      "data_type": "text",
+      "field_metadata": {
+        "_default": true
+      },
+      "unique": false,
+      "mandatory": false,
+      "multiple": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "Description",
+      "uid": "description",
+      "field_metadata": {
+        "allow_rich_text": true,
+        "description": "",
+        "multiline": false,
+        "rich_text_type": "advanced"
+      },
+      "multiple": false,
+      "mandatory": false,
+      "unique": false
+    },
+    {
+      "data_type": "reference",
+      "display_name": "Parent",
+      "reference_to": "categories",
+      "field_metadata": {
+        "ref_multiple": false
+      },
+      "uid": "parent",
+      "multiple": false,
+      "mandatory": false,
+      "unique": false
+    }
+  ],
+  "options": {
+    "is_page": true,
+    "title": "title",
+    "sub_title": [],
+    "url_pattern": "/:title",
+    "_version": 4,
+    "url_prefix": "/category/",
+    "description": "List of categories",
+    "singleton": false
+  },
+  "description": ""
+}
