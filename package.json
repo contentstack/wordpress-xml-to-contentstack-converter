@@ -1,5 +1,5 @@
 {
-  "name": "wordpress-exporter-xml",
+  "name": "Wordpress-xml-to-contentstack-converter",
   "version": "0.0.1",
   "dependencies": {
     "lodash": "^4.17.2",
