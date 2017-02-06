@@ -56,7 +56,7 @@ ExtractCategories.prototype = {
                 if(description){
                     description=description.replace(/&amp;/g, '&')
                 }
-                var parent=data['parent']
+                var parent=data['parent'] || "";
                 var url = "/category/" + data["nicename"].toLowerCase().replace(slugRegExp, '-');
                 categorydata[data["nicename"]] = {"title": title, "url": url, description:description ,parent:[parent]}
                 categorymaster["en-us"][data["nicename"]]=""

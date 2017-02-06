@@ -70,8 +70,14 @@ ExtractAuthors.prototype = {
                     self.putAuthors(authors)
                     resolve()
                 } else {
-                    errorLogger("no authors found");
-                    resolve()
+                    if(typeof authors=="object"){
+                        var singleAuthor=[];
+                        singleAuthor.push(authors)
+                        self.putAuthors(singleAuthor)
+                    }else {
+                        errorLogger("no authors found");
+                    }
+                        resolve()
                 }
             }else{
                 errorLogger("no authors found");
