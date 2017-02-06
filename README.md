@@ -7,9 +7,9 @@ This project (export script) allows you to export content from WordPress into an
 ## Setup and installation
  1. Download this project and run the command given below in a terminal:
 
-        ```bash
-        npm install
-        ```
+    ```bash
+    npm install
+    ```
 
     This command will install the required node modules on your system.
  2. [Export](https://en.support.wordpress.com/export/) WordPress content into an XML file from the WordPress admin panel.
