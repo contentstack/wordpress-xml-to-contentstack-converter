@@ -40,6 +40,19 @@ The sequence of modules to be exported can be as follows:
  3. categories
  4. posts
 
+### Export specific modules via ID
+Modules that you wish to export separately or those that have failed to export (modules are recorded in the error log or in the failed.json file) can be installed with the help of their IDs. These IDs will be stored as comma-separated values in a text file. Now, to export the modules, you need to provide the absolute path of the file that stores the IDs, when running the following command in a terminal:
+
+```
+  npm run export <<module name>> <<absolute_path_of_the_file>>
+ ```
+
+However, if you wish to export the 'categories' module, you need to provide the absolute path of the file that stores the slugs of all the categories (the slugs are stored as comma-separated values in the file), when running the following command in a terminal:
+
+```
+  npm run export <<module name>> <<absolute_path_of_the_file (slug for category)>>
+ ```
+
 ## Log
 You can find the logs of the export process under libs/utils/logs. The files included are 'success' and 'error'. Successfully run processes are recorded under 'success' and the errors under 'errors'.
 
