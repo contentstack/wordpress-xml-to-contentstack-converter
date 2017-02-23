@@ -20,7 +20,7 @@
       "field_metadata": {
         "_default": true
       },
-      "unique": false,
+      "unique": true,
       "mandatory": false,
       "multiple": false
     },
